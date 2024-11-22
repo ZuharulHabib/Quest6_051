@@ -43,11 +43,34 @@ fun DetailView(
             fontWeight = FontWeight.Bold,
             fontSize = 20.sp,
 
+            )
+        HorizontalDivider()
+        listDataMHS.forEach { data ->
+            DetailMHS(
+                judul = data.first,
+                isinya = data.second
+            )
+        }
+        listDataKRS.forEach { data ->
+            DetailMHS(
+                judul = data.first,
+                isinya = data.second
+            )
+        }
+
+        Button(
+            modifier = Modifier.fillMaxWidth(),
+            onClick = {
+                onBackButtonClicked()
+            }
+        ) {
+            Text(text = "Kembali")
+        }
+    }
+}
 
 
-
-
-            @Composable
+        @Composable
 fun DetailMHS(
     judul: String,
     isinya: String
