@@ -36,11 +36,18 @@ fun DetailView(
         modifier = Modifier
             .padding(16.dp)
             .fillMaxSize()
+    ) {
+        Spacer(modifier = Modifier.padding(top = 20.dp))
+        Text(
+            text = "Detail Data Mahasiswa",
+            fontWeight = FontWeight.Bold,
+            fontSize = 20.sp,
 
 
 
 
-    @Composable
+
+            @Composable
 fun DetailMHS(
     judul: String,
     isinya: String
