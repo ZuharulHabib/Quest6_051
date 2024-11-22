@@ -18,7 +18,9 @@ import com.example.pertemuan8.ui.view.viewmodel.RencanaStudyViewModel
 
 enum class Halaman{
     Splash,
-
+    Mahasiswa,
+    Matakuliah,
+    Tampil
 }
 
 @Composable
