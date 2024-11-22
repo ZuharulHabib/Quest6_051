@@ -28,6 +28,12 @@ fun DetailView(
         Pair("Nama", dataMHS.nama),
         Pair("Email", dataMHS.email)
     )
+    val listDataKRS = listOf(
+        Pair("Mata Kuliah", dataKRS.mataKuliah),
+        Pair("Kelas", dataKRS.kelas)
+    )
+
+
 
 
     @Composable
