@@ -52,9 +52,7 @@ fun MahasiswaApp(
                     mahasiswaViewModel.saveDataMhs(it)
                     navController.navigate(Halaman.Matakuliah.name)
                 },
-                onBackButtonClick = {
-                    navController.popBackStack()
-                }
+
             )
         }
 
