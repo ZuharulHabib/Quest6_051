@@ -28,50 +28,9 @@ fun DetailView(
         Pair("Nama", dataMHS.nama),
         Pair("Email", dataMHS.email)
     )
-    val listDataKRS = listOf(
-        Pair("Mata Kuliah", dataKRS.mataKuliah),
-        Pair("Kelas", dataKRS.kelas)
-    )
 
-    Column(
-        modifier = Modifier
-            .padding(16.dp)
-            .fillMaxSize()
-    ) {
-        Spacer(modifier = Modifier.padding(top = 20.dp))
-        Text(
-            text = "Detail Data Mahasiswa",
-            fontWeight = FontWeight.Bold,
-            fontSize = 20.sp,
 
-            )
-        HorizontalDivider()
-        listDataMHS.forEach { data ->
-            DetailMHS(
-                judul = data.first,
-                isinya = data.second
-            )
-        }
-
-        listDataKRS.forEach { data ->
-            DetailMHS(
-                judul = data.first,
-                isinya = data.second
-            )
-        }
-
-        Button(
-            modifier = Modifier.fillMaxWidth(),
-            onClick = {
-                onBackButtonClicked()
-            }
-        ) {
-            Text(text = "Kembali")
-        }
-    }
-}
-
-@Composable
+    @Composable
 fun DetailMHS(
     judul: String,
     isinya: String
