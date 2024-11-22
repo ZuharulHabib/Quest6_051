@@ -32,6 +32,10 @@ fun DetailView(
         Pair("Mata Kuliah", dataKRS.mataKuliah),
         Pair("Kelas", dataKRS.kelas)
     )
+    Column(
+        modifier = Modifier
+            .padding(16.dp)
+            .fillMaxSize()
 
 
 
